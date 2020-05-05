@@ -19,7 +19,7 @@
         </ol>
       </nav>
 <img id="insta" src="../assets/fotos/logo-insta.png" >
-<img id="zap" src="../assets/fotos/logo-zap.png" >
+<a href="http://www.instagram.com"><img id="zap" src="../assets/fotos/logo-zap.png" ></a>
   </header>
   
   </div>
@@ -38,7 +38,7 @@ export default {
 <style >
 .navbar{
   position: absolute;
-width: 1440px;
+width: 100%;
 height: 1024px;
 left: 0px;
 top: 0px;
@@ -47,7 +47,7 @@ background: #93D8E4;
 }
 header#cabecalho{
   position: absolute;
-width: 1440px;
+width: 100%;
 height: 210px;
 left: 0px;
 top: 0px;
@@ -80,6 +80,14 @@ border-radius: 8px;
 	margin: 2px;
   color: black;
 }
+nav#menu-home li a{
+  text-decoration: none;
+  color: black;
+}
+
+nav#menu-home li a:hover{
+  color: #93D8E4;
+}
 header#cabecalho img#insta{
   position: absolute;
 width: 102px;
@@ -94,5 +102,7 @@ height: 95px;
 left: 1161px;
 top: 54px;
 }
+
+
 
 </style>
