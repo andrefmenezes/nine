@@ -5,8 +5,6 @@
 <img id="ftc" src="../assets/fotos/cont.png" >
   </div>
 <div id="form">
-
-
   <form method="post" id="fContato" action="mailto:decomenezes00@gmail.com" >
 <fieldset id="usuario">
 <p><label id="nome" for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="40" maxlength="30" placeholder="Nome completo"></p>    
@@ -34,6 +32,7 @@ export default {
 
 
 <style >
+
 
 div#cel img#ftc{
   position: absolute;
@@ -114,7 +113,6 @@ color: #63CAC6;
 position: absolute;
 width: 355px;
 height: 54px;
-
 background: #C4C4C4;
 mix-blend-mode: multiply;
 border-radius: 67px;
@@ -167,7 +165,8 @@ background: #C4C4C4;
 mix-blend-mode: multiply;
 border-radius: 37px;
 }
-form#fContato input#img{position: absolute;
+form#fContato input#img{
+position: absolute;
 width: 72px;
 height: 64px;
 left: 250px;

@@ -1,27 +1,26 @@
+
 <template>
   <div class="navbar">
-  <header id="cabecalho">
-   <img id="nine" src="../assets/fotos/nine-sites.png" >
-   <nav id="menu-home">
-           <ol type="1">
-          <li>
-            <router-link to="/Home">Home</router-link>
-          </li>
-          <li>
-            <router-link to="/nine">A Nine Sites</router-link>
-          </li>
-          <li >
-            <router-link to="/serv"> Serviços</router-link>
-          </li>
-          <li>
-            <router-link to="/contato">Contato</router-link>
-          </li>
-        </ol>
-      </nav>
-<img id="insta" src="../assets/fotos/logo-insta.png" >
-<a href="http://www.instagram.com"><img id="zap" src="../assets/fotos/logo-zap.png" ></a>
-  </header>
-  
+    <header class="cabecalho container">
+        <a class="logo" href="#"><img src="../assets/fotos/nine-sites.png" > </a>
+  <button class="btn-menu bg-gradiente">
+      <i class="fa fa-bars fa-lg"></i>
+  </button>
+  <nav class="menu">
+      <a class="btn-close"><i class="fa fa-times"></i></a>
+      <div class="nav">
+      <ul>
+       
+         <li><router-link to="/Home"> Home </router-link></li> 
+         <li><router-link to="/serv"> Serviços </router-link></li> 
+         <li><router-link to="/nine"> A Nine Sites </router-link></li> 
+         <li><router-link to="/contato"> Contato </router-link></li> 
+      </ul>
+      <a class="insta" href="https://www.instagram.com/jeanfcf/" target ="blank"> <img src="../assets/fotos/logo-insta.png" ></a>
+      <a  href="https://api.whatsapp.com/send?phone=5581999487583" target ="blank"> <img src="../assets/fotos/logo-zap.png" ></a>
+    </div>
+  </nav>
+</header> 
   </div>
 </template>
 
@@ -34,75 +33,161 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style >
+body{
+    background-color: #f5f5f5;
+}
 .navbar{
-  position: absolute;
-width: 100%;
-height: 1024px;
-left: 0px;
-top: 0px;
-
-background: #93D8E4;
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    
+    background-color: #f5f5f5;
 }
-header#cabecalho{
-  position: absolute;
-width: 100%;
-height: 210px;
-left: 0px;
-top: 0px;
-background: #FFFFFF;
-}
-header#cabecalho img#nine{
-  position: absolute;
-width: 230px;
-height: 210px;
-left: 131px;
-top: 0px;
-}
-nav#menu-home{
-  display: block;
-}
-nav#menu-home ol{
-  list-style: none;
-	text-transform: uppercase;/* nome maisculo*/
-	position: absolute;
-	top: 70px;
-	left: 400px;
-  color: black;
-}
-nav#menu-home li{
-border-radius: 8px;
-	display: inline-block;
-	font-size: 20px;
-  line-height: 35px;
-	padding: 10px;
-	margin: 2px;
-  color: black;
-}
-nav#menu-home li a{
-  text-decoration: none;
-  color: black;
+*{        
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    border: none;
+    outline: none;
+    font-weight: 300;
+    box-sizing: border-box;
+    font-family: Arial,sans-serif;
 }
 
-nav#menu-home li a:hover{
-  color: #93D8E4;
+ul{
+    list-style: none;
 }
-header#cabecalho img#insta{
-  position: absolute;
-width: 102px;
-height: 102px;
-left: 1000px;
-top: 54px;
+a{
+    text-decoration: none;
 }
-header#cabecalho img#zap{
-  position: absolute;
-width: 99px;
-height: 95px;
-left: 1161px;
-top: 54px;
+img{
+    max-width: 100%;
+}
+.container{
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+    text-align: center;
+}
+.bg-gradiente{
+    background: linear-gradient(to right, #93D8E4,#63CAC6);
 }
 
+.logo{
+    height: 56px;
+    width: 56px;
+    float: left;
+  margin-top: -25px;
+    font-size: 0;
+}
+.btn-menu{
+    width: 56px;
+    height: 56px;
+    float: right;
+    text-align: center;
+    color: white;
+    border-radius: 56px;
+    cursor: pointer;
+    
+
+}
+.btn-close{
+    font-size: 1.5em;
+    color: #fff;
+    float: right;
+    cursor: pointer;
+    margin: 2% 3% 0 0;
+  
+}
+.menu{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 0;
+    left: 0;
+
+}
+
+.menu ul{
+    width: 100%;
+    float: left; 
+    text-align: center;
+    }
+.menu li{
+    padding: 1.5%;
+    }
+    .menu li a{
+        font-size: 2em;
+        color: white;
+        padding: 1.5% 3%S;
+    }
+     .menu li a:hover{
+border: 1px solid #93D8E4;
+     }
 
 
+.insta{
+    margin-right: 2%;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    
+}
+    /*mobile*/
+
+    @media screen and (min-width: 360px){
+
+        .logo{
+            margin-top: 0.8%;
+           width: 214px;           
+            background: url(../assets/fotos/nine-sites.png) center center/214px no-repeat;
+                 }
+        .btn{
+          font-size: 2em;
+                   
+        }
+    }
+     @media screen and (min-width: 736px){
+      
+      .logo{
+       margin-top: -25px;
+      }
+     
+    }
+
+      @media screen and (min-width: 1280px){
+       .btn-menu{
+           display: none;
+       }
+       .btn-close{
+           display: none;
+       }
+        .menu{
+            width: auto;
+            height: 56px;
+            line-height: 56px;
+            float: right;
+            background-color: #f5f5f5;
+            display: block !important;
+            position: static;
+        }
+        .menu li{
+            padding: 0;
+            float: left;
+        }
+        .menu li a{
+           font-size: 1em;
+           padding: 15px;
+            color: #130400;
+        }
+        .menu li a:hover{
+            border: none;
+            color: #93D8E4;
+        }
+      }
 </style>

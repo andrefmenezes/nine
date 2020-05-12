@@ -12,7 +12,7 @@ const routes = [
     {
         path: '/serv',
         component: serv
-    },
+    }, 
     {
         path: '/contato',
         component: contato

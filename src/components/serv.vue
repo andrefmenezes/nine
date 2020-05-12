@@ -1,29 +1,23 @@
 <template>
-  <div class="serv">
-  <div id="rt">
- <p>
-Serviços:
- </p>
-  </div>
-  <div id="txt">
-<p>
-     A Nine Sites é especializada na criação de sites profissionais. Nós projetamos, desenvolvemos e gerenciamos sites de alto impacto que geram leads, vendem produtos e contam histórias.
 
-</p>
-<p>
-    Nosso trabalho envolve a criação de sites profissionais, exclusivos e gerenciáveis. Porém, não queremos ser apenas mais uma empresa de criação de sites. Nossa proposta, é que você tenha além de um site bonito, um site que gere vendas.
+ <main class="servicos">
+      <article class="servico bg-white radius">
+        
+        <div class="inner">
+        <h1 >Serviços: </h1>
+        <h4>Criação de sites</h4>
+        <p>A Nine Sites é especializada na criação de sites profissionais. Nós projetamos, desenvolvemos e gerenciamos sites de alto impacto que geram leads, vendem produtos e contam histórias.
+            Nosso trabalho envolve a criação de sites profissionais, exclusivos e gerenciáveis. Porém, não queremos ser apenas mais uma empresa de criação de sites. Nossa proposta, é que você tenha além de um site bonito, um site que gere vendas.
+            </p>
+        </div>
+        <a href="#"><img src="../assets/fotos/pc.png" alt="criaçao de site"> </a>
+        <router-link to="/contato"><button class="bt">Peça seu orçamento</button></router-link>
+          </article>
+   </main>
 
-</p>
-<button id="bt" v-on:click="s">Peça seu orçamento</button>
-<router-link to="/contato"><button id="bt">Peça seu orçamento</button></router-link>
-  </div>
   
-<div id="ftpc">
-<img id="pc" src="../assets/fotos/pc.png" >
-</div>
+  
 
- 
-  </div>
 </template>
 
 <script>
@@ -36,74 +30,70 @@ export default {
 </script>
 
 <style >
-div#ftpc{
-position: absolute;
-width: 417px;
-height: 313px;
-left: 39px;
-top: 720px;
 
+
+a{
+    text-decoration: none;
 }
-div#ftpc img#pc{
-    border-radius: 44px;
+img{
+    max-width: 100%;
 }
-div#rt{
-position: absolute;
-width: 556px;
-height: 77px;
-left: 57px;
-top: 255px;
-
-background: #63CAC6;
+.bg-white{
+    background-color: white;
 }
-div#rt p{
-position: absolute;
-width: 183px;
-height: 53px;
-
-
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 45px;
-line-height:0px;
-/* identical to box height */
-
-
-color: #FFFFFF;
-
+.radius{
+    border-radius: 7px;
 }
-div#txt{
-    position: absolute;
-width: 1112px;
-height: 330px;
-left: 44px;
-top: 347px;
+.servicos{
+    position: relative;
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+    text-align: center;
 }
-div#txt p{
-    font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 35px;
-line-height: 41px;
+.servico{
+    width: 100%;       
+  
+}
+.servico img{    
+    border-radius: 7px 7px 0 0;
+    margin-bottom: 2%;
+}
+.inner{
+    padding: 2%;
+}
+.inner h1 {
+    float: left;
+    margin-bottom: 2%;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #130400;
+}
+.inner h4{
+    float: left;
+    font-size: 1.2em;
+    margin-top: 4%;
+    color: #63CAC6;
+    
+}
 
-color: #000000;
+.inner p{
+    float: left;
+      margin-top: 1%;
+    color: #130400;
+    line-height: 2em;
+    text-align: center;
+    font-size: 1.3em;
+    
 }
-button#bt{
-    position: absolute;
-width: 320px;
-height: 55px;
-left: 960px;
-top: 520px;
+.bt{
+   width: 25%;  
 background-color: #393B3C;
 border-radius: 19px;
 font-family: Roboto;
 font-style: normal;
 font-weight: normal;
-font-size: 35px;
-line-height: 41px;
-/* identical to box height */
-
+font-size: 25px;
 
 color: #FFFFFF;
 
