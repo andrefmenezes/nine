@@ -3,14 +3,18 @@
   <div class="navbar">
     <header class="cabecalho container">
         <a class="logo" href="#"><img src="../assets/fotos/nine-sites.png" > </a>
-  <button class="btn-menu bg-gradiente">
-      <i class="fa fa-bars fa-lg"></i>
-  </button>
-  <nav class="menu">
-      <a class="btn-close"><i class="fa fa-times"></i></a>
+         <Slide right class="menuMobile">
+
+     <router-link to="/Home"> <span> Home</span> </router-link>
+     <router-link to="/serv"><span> Serviços </span> </router-link>
+      <router-link to="/nine"><span> A Nine Sites</span> </router-link>
+      <router-link to="/contato"><span> Contato</span> </router-link>
+   
+    </Slide>
+  
+  <nav class="menu">     
       <div class="nav">
-      <ul>
-       
+      <ul>       
          <li><router-link to="/Home"> Home </router-link></li> 
          <li><router-link to="/serv"> Serviços </router-link></li> 
          <li><router-link to="/nine"> A Nine Sites </router-link></li> 
@@ -25,10 +29,11 @@
 </template>
 
 <script>
+import { Slide } from 'vue-burger-menu'
 export default {
   name: 'navbar',
-  props: {
-    
+   components: {
+     Slide
   }
 }
 </script>
@@ -36,7 +41,7 @@ export default {
 
 <style >
 body{
-    background-color: #f5f5f5;
+    background-color: #f5f5f5 !important;
 }
 .navbar{
     position: absolute;
@@ -82,17 +87,7 @@ img{
   margin-top: -25px;
     font-size: 0;
 }
-.btn-menu{
-    width: 56px;
-    height: 56px;
-    float: right;
-    text-align: center;
-    color: white;
-    border-radius: 56px;
-    cursor: pointer;
-    
 
-}
 .btn-close{
     font-size: 1.5em;
     color: #fff;
@@ -101,6 +96,7 @@ img{
     margin: 2% 3% 0 0;
   
 }
+
 .menu{
     display: none;
     width: 100%;
@@ -161,7 +157,7 @@ border: 1px solid #93D8E4;
     }
 
       @media screen and (min-width: 1280px){
-       .btn-menu{
+       .menuMobile{
            display: none;
        }
        .btn-close{

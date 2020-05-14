@@ -13,7 +13,7 @@
 <p><label id="as" for="cAs">Assunto:</label> <input type="text" name="tAs" id="cAs" size="40" maxlength="30" placeholder="Assunto"></p>
 <p><label id="msg" for ="Msg">Mensagem: </label>
     <textarea name="tMsg" id="cMsg" cols="35" rows="5" placeholder="   Deixe aqui sua mensagem"></textarea></p>
-    <input id="img" type="image" name="tEnviar" src="../assets/fotos/botao-enviar.png">
+    <input id="img" type="" name="tEnviar" >
 </fieldset>
 </form>
 
@@ -166,6 +166,7 @@ mix-blend-mode: multiply;
 border-radius: 37px;
 }
 form#fContato input#img{
+  background: url(../assets/fotos/next.png) ;
 position: absolute;
 width: 72px;
 height: 64px;

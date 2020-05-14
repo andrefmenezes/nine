@@ -3,11 +3,10 @@
 
 <footer class=" container bg-gradiente">
       <div class="social-icons">
-       <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-       <a href="#"><i class="fa fa-google"></i></a>
-       <a href="#"><i class="fa fa-instagram"></i></a>
-       <a href="#"><i class="fa fa-envelope"></i></a>
+       <a href="#"><font-awesome-icon :icon="['fab', 'facebook']" /></a>
+        <a href="#"><font-awesome-icon :icon="['fab', 'whatsapp']" /></a>
+          <a ><font-awesome-icon :icon="['fab', 'instagram']" /></a>
+         <a href="#"><font-awesome-icon :icon="['far', 'envelope']" /></a>
       </div>
       <p class="copy">
       Nine sites &copy;-Mais que um site.
