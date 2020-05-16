@@ -6,7 +6,7 @@ import serv from '@/components/Serv.vue';
 
 const routes = [
     {
-        path: '/Home',
+        path: '/',
         component: Home
     },
     {

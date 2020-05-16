@@ -5,7 +5,7 @@
         <a class="logo" href="#"><img src="../assets/fotos/nine-sites.png" > </a>
          <Slide right class="menuMobile">
 
-     <router-link to="/Home"> <span> Home</span> </router-link>
+     <router-link to="/"> <span> Home</span> </router-link>
      <router-link to="/serv"><span> Serviços </span> </router-link>
       <router-link to="/nine"><span> A Nine Sites</span> </router-link>
       <router-link to="/contato"><span> Contato</span> </router-link>
@@ -15,7 +15,7 @@
   <nav class="menu">     
       <div class="nav">
       <ul>       
-         <li><router-link to="/Home"> Home </router-link></li> 
+         <li><router-link to="/"> Home </router-link></li> 
          <li><router-link to="/serv"> Serviços </router-link></li> 
          <li><router-link to="/nine"> A Nine Sites </router-link></li> 
          <li><router-link to="/contato"> Contato </router-link></li> 
@@ -46,8 +46,7 @@ body{
 .navbar{
     position: absolute;
     width: 100%;
-    top: 0%;
-    
+    top: 0%;    
     background-color: #f5f5f5;
 }
 *{        

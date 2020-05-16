@@ -1,30 +1,28 @@
 <template>
-  <div class="contato">
-      
-  <div id="cel">
-<img id="ftc" src="../assets/fotos/cont.png" >
-  </div>
-<div id="form">
-  <form method="post" id="fContato" action="mailto:decomenezes00@gmail.com" >
-<fieldset id="usuario">
-<p><label id="nome" for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="40" maxlength="30" placeholder="Nome completo"></p>    
-<p><label id ="email" for="cMail">E-mail:</label> <input type="email" name="tmail" id="cMail" size="40" maxlength="40" placeholder="Email"></p>
-<p><label id="tel" for="cAs">Telefone:</label> <input type="text" name="tD" id="cD" size="12" maxlength="15" placeholder="Telefone"></p>
-<p><label id="as" for="cAs">Assunto:</label> <input type="text" name="tAs" id="cAs" size="40" maxlength="30" placeholder="Assunto"></p>
-<p><label id="msg" for ="Msg">Mensagem: </label>
-    <textarea name="tMsg" id="cMsg" cols="35" rows="5" placeholder="   Deixe aqui sua mensagem"></textarea></p>
-    <input id="img" type="" name="tEnviar" >
-</fieldset>
-</form>
+   <div>
+  <div class="containe">
+    <article class="cont">
+      <p>CONTATO:</p>
+      </article>  
+  <form action="#" class="form-contact" method="post" tabindex="1">  
+     <input type="text" class="form-contact-input" name="nome" placeholder="Nome" required />  
+     <input type="email" class="form-contact-input" name="email" placeholder="Email" required />  
+     <input type="tel" class="form-contact-input" name="tel" placeholder="Telefone" />  
+     <textarea class="form-contact-textarea" name="conteudo" placeholder="Deixe uma mensagem" required></textarea>  
+     <button type="submit" class="form-contact-button">Enviar</button>  
+  </form>  
+</div>  
 
-</div>
+  <fofo/>
   </div>
 </template>
 
 <script>
+import fofo from './Footer';
 export default {
   name: 'contato',
-  props: {
+  components:{
+       fofo
     
   }
 }
@@ -32,15 +30,98 @@ export default {
 
 
 <style >
-
-
-div#cel img#ftc{
-  position: absolute;
-width: 1250px;
-height: 798px;
-left: 10px;
-top: 226px;
+p{
+  color: white;
+  font-size: 2em;
 }
+.cont{
+  margin-bottom: 4%;
+width: 70%;
+height: 8%;
+
+
+background: #63CAC6;
+}
+.containe {
+  width: 50%;
+ margin-top: 33%;
+ margin-left: 25%;
+ background-color: #93D8E4 !important;
+}
+
+.form-contact {
+  width: 100%;
+  font-family: "Arial", Times, serif;
+}
+
+.form-contact-input {
+  width: 100%;
+  color: #292929;
+  font-size: 18px;
+  background-color: #C4C4C4;
+  border: 1px solid #C4C4C4;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  height: 40px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  text-indent: 20px;
+}
+
+.form-contact-textarea {
+  width: 100%;
+  color: #292929;
+  font-size: 18px;
+  background-color: #C4C4C4;
+  border: 1px solid #C4C4C4;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  height: 200px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  text-indent: 20px;
+  padding-top: 16px;
+  padding-left: 0;
+  padding-right: 0;
+  font-family: "Arial", Times, serif;
+}
+
+.form-contact-button {
+  margin-left: 23%;
+  width: 50%;
+  font-size: 18px;
+  border-radius: 4px;
+  color: #fff;
+  height: 40px;
+  opacity: .8;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background: #63CAC6;
+  display: block;
+  border: none;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  transition: 1s;
+}
+
+.form-contact-button:hover {
+  opacity: 1;
+}
+ @media screen and (min-width: 736px){
+      .containe {
+  
+ margin-top: 10%;
+
+}
+    
+     
+    }
+
+/*
 fieldset#usuario{
   position: absolute;
 width: 358px;
@@ -174,5 +255,5 @@ left: 250px;
 top: 590px
   
 
-}
+}*/
 </style>

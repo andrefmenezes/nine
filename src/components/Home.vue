@@ -1,24 +1,21 @@
 <template>
 <div>
 <div>
-<div>
-<div>
-<swiper class="swiper" :options="swiperOption">
-    
+<swiper class="swiper" :options="swiperOption">    
     <swiper-slide ><div > <img src="../assets/fotos/banner.jpg" ></div> </swiper-slide>
-    <swiper-slide>Slide 3</swiper-slide>
-   
+    <swiper-slide>Slide 3</swiper-slide>   
     <div class="swiper-pagination" slot="pagination"></div>
     <div class="swiper-button-prev" slot="button-prev"></div>
     <div class="swiper-button-next" slot="button-next"></div>
   </swiper>
 </div>
-    
+    <div id="se">
 <serv/>
   </div>
-  
+  <div id="nin">
  <nine/>
   </div>
+  
   <fofo/>
 </div>
 </template>
