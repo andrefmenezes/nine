@@ -4,12 +4,12 @@
     <article class="cont">
       <p>CONTATO:</p>
       </article>  
-  <form action="#" class="form-contact" method="post" tabindex="1">  
-     <input type="text" class="form-contact-input" name="nome" placeholder="Nome" required />  
-     <input type="email" class="form-contact-input" name="email" placeholder="Email" required />  
-     <input type="tel" class="form-contact-input" name="tel" placeholder="Telefone" />  
-     <textarea class="form-contact-textarea" name="conteudo" placeholder="Deixe uma mensagem" required></textarea>  
-     <button type="submit" class="form-contact-button">Enviar</button>  
+  <form action="#" class="form" method="post" tabindex="1">  
+     <input type="text" class="input" name="nome" placeholder="Nome" required />  
+     <input type="email" class="input" name="email" placeholder="Email" required />  
+     <input type="tel" class="input" name="tel" placeholder="Telefone" />  
+     <textarea class="textarea" name="conteudo" placeholder="Deixe uma mensagem" required></textarea>  
+     <button type="submit" class="button">Enviar</button>  
   </form>  
 </div>  
 
@@ -49,12 +49,12 @@ background: #63CAC6;
  background-color: #93D8E4 !important;
 }
 
-.form-contact {
+.form {
   width: 100%;
   font-family: "Arial", Times, serif;
 }
 
-.form-contact-input {
+.input {
   width: 100%;
   color: #292929;
   font-size: 18px;
@@ -70,7 +70,7 @@ background: #63CAC6;
   text-indent: 20px;
 }
 
-.form-contact-textarea {
+.textarea {
   width: 100%;
   color: #292929;
   font-size: 18px;
@@ -90,7 +90,7 @@ background: #63CAC6;
   font-family: "Arial", Times, serif;
 }
 
-.form-contact-button {
+.button {
   margin-left: 23%;
   width: 50%;
   font-size: 18px;
@@ -108,7 +108,7 @@ background: #63CAC6;
   transition: 1s;
 }
 
-.form-contact-button:hover {
+.button:hover {
   opacity: 1;
 }
  @media screen and (min-width: 736px){
