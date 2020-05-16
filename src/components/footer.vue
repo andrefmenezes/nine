@@ -3,10 +3,10 @@
 
 <footer class=" container bg-gradiente">
       <div class="social-icons">
-       <a href="#"><font-awesome-icon :icon="['fab', 'facebook']" /></a>
-        <a href="#"><font-awesome-icon :icon="['fab', 'whatsapp']" /></a>
-          <a href="#" ><font-awesome-icon :icon="['fab', 'instagram']" /></a>
-         <a href="#"><font-awesome-icon :icon="['far', 'envelope']" /></a>
+       <a href="https://www.facebook.com/JeanCoelhoo" target ="blank" ><font-awesome-icon :icon="['fab', 'facebook']" /></a>
+        <a href="https://api.whatsapp.com/send?phone=5581999487583" target ="blank"><font-awesome-icon :icon="['fab', 'whatsapp']" /></a>
+          <a href="https://www.instagram.com/jeanfcf/" target ="blank" ><font-awesome-icon :icon="['fab', 'instagram']" /></a>
+         
       </div>
       <p class="copy">
       Nine sites &copy;-Mais que um site.
