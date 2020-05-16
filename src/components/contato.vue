@@ -2,7 +2,7 @@
    <div>
   <div class="containe">
     <article class="cont">
-      <p>CONTATO:</p>
+      <p>Contato:</p>
       </article>  
   <form action="#" class="form" method="post" tabindex="1">  
      <input type="text" class="input" name="nome" placeholder="Nome" required />  
@@ -35,8 +35,9 @@ p{
   font-size: 2em;
 }
 .cont{
+  text-align: center;
   margin-bottom: 4%;
-width: 70%;
+width: 100%;
 height: 8%;
 
 
