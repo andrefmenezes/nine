@@ -2,17 +2,19 @@
 <div>
 <div>
 <swiper class="swiper" :options="swiperOption">    
-    <swiper-slide ><div > <img src="../assets/fotos/banner.jpg" ></div> </swiper-slide>
-    <swiper-slide>Slide 3</swiper-slide>   
+    <swiper-slide ><div ><img src="../assets/fotos/s2.jpg"></div> </swiper-slide>
+    <swiper-slide><div><img src="../assets/fotos/banner.jpg" > </div></swiper-slide>   
     <div class="swiper-pagination" slot="pagination"></div>
     <div class="swiper-button-prev" slot="button-prev"></div>
     <div class="swiper-button-next" slot="button-next"></div>
   </swiper>
 </div>
-    <div id="se">
+
+<div id="servico">
 <serv/>
   </div>
-  <div id="nin">
+  
+  <div id="nine">
  <nine/>
   </div>
   

@@ -4,30 +4,32 @@
     <header class="cabecalho container">
         <a class="logo" href="#"><img src="../assets/fotos/nine-sites.png" > </a>
          <Slide right class="menuMobile">
-
      <router-link to="/"> <span> Home</span> </router-link>
-     <router-link to="/serv"><span> Serviços </span> </router-link>
-      <router-link to="/nine"><span> A Nine Sites</span> </router-link>
+     <a href="#servico" class="scrollactive-item"> <span> Serviços </span></a>
+     <a href="#nine" class="scrollactive-item"> <span> A Nine Sites</span> </a>
       <router-link to="/contato"><span> Contato</span> </router-link>
    
     </Slide>
   
   <nav class="menu">     
+       <scrollactive class="my-nav">
       <div class="nav">
+     
       <ul>       
          <li><router-link to="/"> Home </router-link></li> 
-         <li><router-link to="/serv"> Serviços </router-link></li> 
-         <li><router-link to="/nine"> A Nine Sites </router-link></li> 
+         <li><a href="#servico" class="scrollactive-item">Serviços</a></li> 
+         <li><a href="#nine" class="scrollactive-item">A Nine Sites</a></li> 
          <li><router-link to="/contato"> Contato </router-link></li> 
       </ul>
-      <a class="insta" href="https://www.instagram.com/jeanfcf/" target ="blank"> <img src="../assets/fotos/logo-insta.png" ></a>
+    <a class="insta" href="https://www.instagram.com/jeanfcf/" target ="blank"> <img src="../assets/fotos/logo-insta.png" ></a>
       <a  href="https://api.whatsapp.com/send?phone=5581999487583" target ="blank"> <img src="../assets/fotos/logo-zap.png" ></a>
     </div>
+       </scrollactive>
   </nav>
 </header> 
   </div>
 </template>
-
+<script src="dist/vue-scrollactive.min.js"></script>
 <script>
 import { Slide } from 'vue-burger-menu'
 export default {

@@ -39,8 +39,6 @@ p{
   margin-bottom: 4%;
 width: 100%;
 height: 8%;
-
-
 background: #63CAC6;
 }
 .containe {
@@ -101,7 +99,7 @@ background: #63CAC6;
   opacity: .8;
   margin-bottom: 20px;
   cursor: pointer;
-  background: #63CAC6;
+  background: #54825d;
   display: block;
   border: none;
   border-bottom: 1px solid black;
