@@ -113,9 +113,10 @@ background: #63CAC6;
  @media screen and (min-width: 736px){
       .containe {
   
- margin-top: 10%;
+ margin-top: 18%;
 
 }
+
     
      
     }
