@@ -85,7 +85,7 @@ img{
     height: 56px;
     width: 56px;
     float: left;
-  margin-top: -25px;
+  margin-top: 0.8%;
     font-size: 0;
 }
 
@@ -139,11 +139,7 @@ border: 1px solid #93D8E4;
 
     @media screen and (min-width: 360px){
 
-        .logo{
-            margin-top: 0.8%;
-           width: 214px;           
-            background: url(../assets/fotos/nine-sites.png) center center/214px no-repeat;
-                 }
+       
         .btn{
           font-size: 2em;
                    
@@ -152,7 +148,12 @@ border: 1px solid #93D8E4;
      @media screen and (min-width: 736px){
       
       .logo{
-       margin-top: -25px;
+                     
+            margin-top: 0.1%;
+           width: 214px;           
+            background: url(../assets/fotos/nine-sites.png) center center/214px no-repeat;
+                 
+       
       }
      
     }
