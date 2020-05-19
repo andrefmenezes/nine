@@ -149,8 +149,9 @@ border: 1px solid #93D8E4;
       
       .logo{
                      
-            margin-top: 0.1%;
-           width: 214px;           
+            margin-top: 0;
+           width: 214px; 
+           height: 100px;          
             background: url(../assets/fotos/nine-sites.png) center center/214px no-repeat;
                  
        

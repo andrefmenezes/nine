@@ -93,9 +93,15 @@ border-radius: 19px;
 font-family: Roboto;
 font-style: normal;
 font-weight: normal;
-font-size: 25px;
+font-size: 1em;
 
 color: #FFFFFF;
 
 }
+ @media screen and (min-width: 736px){
+  .bt{
+      font-size: 25px;
+  }
+     
+    }
 </style>

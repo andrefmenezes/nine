@@ -59,14 +59,14 @@ export default {
 <style >
     .swiper{
          position: relative;
-        margin-top: 15%;
+        margin-top: 18%;
         height: 40%;
         width: 100%;
         min-height: 300px;
         
         
     }
-    @media screen and (min-width: 360px){
+    @media screen and (min-width: 320px){
       
       .swiper{
          margin-top: 25%;
@@ -77,7 +77,7 @@ export default {
      @media screen and (min-width: 736px){
       
       .swiper{
-        margin-top: 15%;
+        margin-top: 16%;
           min-height:300px ;
       }
      
