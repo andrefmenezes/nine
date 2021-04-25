@@ -4,7 +4,7 @@
     <article class="cont">
       <p>Contato:</p>
       </article>  
-  <form action="mailto:decomenezes00@gmail.com" class="form" method="post" tabindex="1">  
+  <form action="mailto:afmdtb@ecomp.poli.br" class="form" method="post" tabindex="1">  
      <input type="text" class="input" name="nome" placeholder="Nome" required />  
      <input type="email" class="input" name="email" placeholder="Email" required />  
      <input type="tel" class="input" name="tel" placeholder="Telefone" />  

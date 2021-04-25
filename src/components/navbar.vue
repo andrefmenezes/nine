@@ -21,8 +21,8 @@
          <li><a href="#nine" class="scrollactive-item">A Nine Sites</a></li> 
          <li><router-link to="/contato"> Contato </router-link></li> 
       </ul>
-    <a class="insta" href="https://www.instagram.com/jeanfcf/" target ="blank"> <img src="../assets/fotos/logo-insta.png" ></a>
-      <a  href="https://api.whatsapp.com/send?phone=5581999487583" target ="blank"> <img src="../assets/fotos/logo-zap.png" ></a>
+    <a class="insta" href="https://www.instagram.com/" target ="blank"> <img src="../assets/fotos/logo-insta.png" ></a>
+      <a  href="https://api.whatsapp.com/send?phone=5581933006419" target ="blank"> <img src="../assets/fotos/logo-zap.png" ></a>
     </div>
        </scrollactive>
   </nav>
