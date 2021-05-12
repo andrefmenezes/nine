@@ -17,7 +17,7 @@
     "core-js": "^3.6.4",
     "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2",
-    "swiper": "^5.3.8",
+    "swiper": "^6.5.1",
     "vue": "^2.6.11",
     "vue-awesome-swiper": "^4.1.1",
     "vue-burger-menu": "^2.0.5",
